@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>JS webite</title>
+        
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link id="theme" rel="stylesheet" type="text/css" href="css/green.css" />
+
+        <!--Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css" />
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.min.css" />
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.min.css" />
+        <script type="text/javascript" src="jquery-ui/jquery-ui.min.js"></script>
+
+        <!-- Plug in validation -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+        <!-- Scripts -->
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+
+        <div id="selector-theme">
+            <div id="to-green"></div>
+            <div id="to-red"></div>
+            <div id="to-blue"></div>
+        </div>
+
+        <section id="global">
+            <header>
+                <div id="logo">
+                    <h1>Project JS</h1>
+                </div>
+                <div class="clearfix"></div>
+                <nav id="menu">
+                    <ul>
+                        <li> <a href="index.html">Home </a></li>
+                        <li> <a href="clock.html">Clock </a></li>
+                        <li> <a href="about.html">About </a></li>
+                        <li> <a href="contact.html">Contact </a></li>
+                    </ul>
+                </nav>
+            </header>
+
+
+            <!-- Content -->
+            <section id="content">
+
+                <div id="box">
+                    <!-- Load contact form-->
+                    <h2>Contact</h2>
+
+                    <p>Let me know if you want me to reach you out!</p>
+                    <form action="" method="post" id="form_contact">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" data-validation="alphanumeric">
+                        <label for="surname">Surname</label>
+                        <input type="text" name="surname" data-validation="alphanumeric">
+                        <label for="mail">Mail</label>
+                        <input type="text" name="mail" data-validation="email">
+                        <label for="gender">Gender</label>
+                        <select name="gender" data-validation="required">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="non-binary">Non binary</option>
+                            <option value="gender-fluid">Gender fluid</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <label for="date">Date of birth</label>
+                        <input type="text" name="date" data-validation="date" data-validation-format="dd-mm-yyyy">
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <aside id="sidebar">  
+                    <div id="about">
+                        <h4><span>Who am I?</span></h4>
+                        <img src="images/cat.jpg" />
+                        <p>
+                            "Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit,
+                        </p>
+                    </div>  
+                    <div id="login">
+                        <h4><span>Log in</span></h4>
+                        <form>
+                            <label for="name">
+                                Name
+                            </label>
+                            <input type="text" placeholder="name" id="form_name">
+
+                            <label for="mail">
+                                Mail
+                            </label>
+                            <input type="text" placeholder="mail" id="form_mail">
+
+                            <label for="password">
+                                Password
+                            </label>
+                            <input type="password" placeholder="password" id="form_password">
+
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </aside>
+                <div class="clearfix"></div>
+            </section>
+        </section>
+
+        <footer>
+            Done by Sergi Navarro 
+
+            <a href="#" class="up">Go up</a>
+        </footer>
+    </body>
+</html>

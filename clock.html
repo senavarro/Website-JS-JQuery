@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>JS webite</title>
+        
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link id="theme" rel="stylesheet" type="text/css" href="css/green.css" />
+
+        <!--Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!-- Moment JS plug in-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/en-gb.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.js"></script>
+
+        <!-- Scripts -->
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+
+        <div id="selector-theme">
+            <div id="to-green"></div>
+            <div id="to-red"></div>
+            <div id="to-blue"></div>
+        </div>
+
+        <section id="global">
+            <header>
+                <div id="logo">
+                    <h1>Project JS</h1>
+                </div>
+                <div class="clearfix"></div>
+                <nav id="menu">
+                    <ul>
+                        <li> <a href="index.html">Home </a></li>
+                        <li> <a href="clock.html">Clock </a></li>
+                        <li> <a href="about.html">About </a></li>
+                        <li> <a href="contact.html">Contact </a></li>
+                    </ul>
+                </nav>
+            </header>
+
+
+            <!-- Content -->
+            <section id="content">
+
+                <div id="box">
+                    <!-- Load clock -->
+                    <div id="clock">
+
+                    </div>
+                   
+                </div>
+                <aside id="sidebar">  
+                    <div id="about">
+                        <h4><span>Who am I?</span></h4>
+                        <img src="images/cat.jpg" />
+                        <p>
+                            "Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit,
+                        </p>
+                    </div>  
+                    <div id="login">
+                        <h4><span>Log in</span></h4>
+                        <form>
+                            <label for="name">
+                                Name
+                            </label>
+                            <input type="text" placeholder="name" id="form_name">
+
+                            <label for="mail">
+                                Mail
+                            </label>
+                            <input type="text" placeholder="mail" id="form_mail">
+
+                            <label for="password">
+                                Password
+                            </label>
+                            <input type="password" placeholder="password" id="form_password">
+
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </aside>
+                <div class="clearfix"></div>
+            </section>
+        </section>
+
+        <footer>
+            Done by Sergi Navarro 
+
+            <a href="#" class="up">Go up</a>
+        </footer>
+    </body>
+</html>
